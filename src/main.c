@@ -46,11 +46,13 @@ static void	check_opt(int argc, char **argv, s_peconf *conf)
   check_binary(argv, conf);
 }
 
-
 int		main(int argc, char **argv)
 {
   s_peconf	conf;
 
   check_opt (argc, argv, &conf);
+  print_info(&conf);
+  free(conf.sb);
+  close(conf.fd);
   return (0);
 }

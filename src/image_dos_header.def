@@ -1,0 +1,23 @@
+printf("Header signature = " FORMAT "\n", idh->e_magic);
+printf("Bytes on last page of file = " FORMAT "\n", idh->e_cblp);
+printf("Pages in file = " FORMAT "\n", idh->e_cp);
+printf("Relocations = " FORMAT "\n", idh->e_crlc);
+printf("Size of header in paragraphs = " FORMAT "\n", idh->e_cparhdr);
+printf("Minimum extra paragraphs needed = " FORMAT "\n", idh->e_minalloc);
+printf("Maximum extra paragraphs needed = " FORMAT "\n", idh->e_maxalloc);
+printf("Initial (relative) SS value = " FORMAT "\n", idh->e_ss);
+printf("Initial SP value = " FORMAT "\n", idh->e_sp);
+printf("Checksum = " FORMAT "\n", idh->e_csum);
+printf("Initial IP value = " FORMAT "\n", idh->e_ip);
+printf("Initial (relative) CS value = " FORMAT "\n", idh->e_cs);
+printf("File address of relocation table = " FORMAT "\n", idh->e_lfarlc);
+printf("Overlay number = " FORMAT "\n", idh->e_ovno);
+printf("Reserved words :\n");
+  for (i = 0; i < 4; i++)
+printf("[%d] = " FORMAT "\n", i + 1, idh->e_res[i]);
+printf("OEM identifier = " FORMAT "\n", idh->e_oemid);
+printf("OEM information = " FORMAT "\n", idh->e_oeminfo);
+printf("Reserved words 2 :\n");
+  for (i = 0; i < 10; i++)
+printf("[%d] = " FORMAT "\n", i + 1, idh->e_res2[i]);
+printf("PE header offset = " FORMAT "\n", idh->e_lfanew);

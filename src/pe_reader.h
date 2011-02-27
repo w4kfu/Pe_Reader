@@ -20,14 +20,15 @@ typedef struct peconf s_peconf;
 
 # include "pe.h"
 # include "error.h"
+# include "print_info.h"
 
-struct peconf
+struct		peconf
 {
   char		*name;
   int		fd;
   struct stat	*sb;
   char		*p;
+  int		hex;
 };
-
 
 #endif /* !PE_READER_H_ */

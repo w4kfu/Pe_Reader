@@ -1,0 +1,7 @@
+printf("Machine = " FORMAT "\n", ifh->Machine);
+printf("Number of sections = " FORMAT "\n", ifh->NumberOfSections);
+printf("Time Date Stamp = " FORMAT "\n", ifh->TimeDateStamp);
+printf("Pointer to symbol Table = " FORMAT "\n", ifh->PointerToSymbolTable);
+printf("Number of symbols = " FORMAT "\n", ifh->NumberOfSymbols);
+printf("Size of optional header = " FORMAT "\n", ifh->SizeOfOptionalHeader);
+printf("Characteristics = " FORMAT "\n", ifh->Characteristics);
