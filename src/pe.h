@@ -5,7 +5,6 @@
 ** @author      Samuel CHEVET (w4kfu)
 */
 
-
 #ifndef PE_H_
 # define PE_H_
 
@@ -18,14 +17,14 @@ typedef unsigned int		t_uint32;
 # define IMAGE_NUMBEROF_DIRECTORY_ENTRIES	16
 
 
-# define image_dos_header_length	sizeof(t_image_dos_header)
-# define image_file_header_length	sizeof(t_image_file_header)
-# define image_data_directory_length	sizeof(t_image_data_directory)
-# define image_optional_header_length	sizeof(t_image_optional_header)
-# define image_section_header_length	sizeof(t_image_section_header)
-# define image_import_by_name_length	sizeof(t_image_import_by_name)
-# define image_thunk_data_length	sizeof(t_image_thunk_data)
-# define image_import_descriptor_length	sizeof(t_image_descriptor)
+# define image_dos_header_length	sizeof (t_image_dos_header)
+# define image_file_header_length	sizeof (t_image_file_header)
+# define image_data_directory_length	sizeof (t_image_data_directory)
+# define image_optional_header_length	sizeof (t_image_optional_header)
+# define image_section_header_length	sizeof (t_image_section_header)
+# define image_import_by_name_length	sizeof (t_image_import_by_name)
+# define image_thunk_data_length	sizeof (t_image_thunk_data)
+# define image_import_descriptor_length	sizeof (t_image_descriptor)
 
 typedef struct
 {

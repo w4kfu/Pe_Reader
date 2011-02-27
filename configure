@@ -1,0 +1,9 @@
+#! /bin/sh
+
+FILES="main.c error.c"
+NAME="pe_reader"
+
+echo 'CC = gcc' > makefile.rules
+echo 'CFLAGS = -Wall -W -Werror -pedantic' >> makefile.rules
+echo "NAME_PROJ = $NAME" >> makefile.rules
+echo "FILES = $FILES" >> makefile.rules
