@@ -1,3 +1,11 @@
+/**
+** @file        pe.h
+** @brief       All necessary declarations for manipulating PE file
+** @date        27/02/2011
+** @author      Samuel CHEVET (w4kfu)
+*/
+
+
 #ifndef PE_H_
 # define PE_H_
 
@@ -143,7 +151,5 @@ typedef struct
   t_uint32		Name;
   t_image_thunk_data	*FirstThunk;
 }			t_image_import_descriptor;
-
-
 
 #endif /* !PE_H_ */
