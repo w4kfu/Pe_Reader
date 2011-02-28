@@ -14,7 +14,7 @@ typedef unsigned int		t_uint32;
 
 # define IMAGE_DOS_SIGNATURE			0x5A4D
 # define IMAGE_NT_SIGNATURE			0x00004550
-# define IMAGE_NUMBEROF_DIRECTORY_ENTRIES	16
+# define IMAGE_NUMBER_DIRECTORY_ENTRIES		16
 
 
 # define image_dos_header_length	sizeof (t_image_dos_header)
@@ -24,7 +24,7 @@ typedef unsigned int		t_uint32;
 # define image_section_header_length	sizeof (t_image_section_header)
 # define image_import_by_name_length	sizeof (t_image_import_by_name)
 # define image_thunk_data_length	sizeof (t_image_thunk_data)
-# define image_import_descriptor_length	sizeof (t_image_descriptor)
+# define image_import_descriptor_length	sizeof (t_image_import_descriptor)
 
 typedef struct
 {
@@ -99,7 +99,7 @@ typedef struct
   t_uint32			SizeOfHeapCommit;
   t_uint32			LoaderFlags;
   t_uint32			NumberOfRvaAndSizes;
-  t_image_data_directory	DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
+  t_image_data_directory	DataDirectory[IMAGE_NUMBER_DIRECTORY_ENTRIES];
 }				t_image_optional_header;
 
 typedef struct

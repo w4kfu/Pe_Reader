@@ -1,7 +1,7 @@
-printf("Machine = " FORMAT "\n", ifh->Machine);
-printf("Number of sections = " FORMAT "\n", ifh->NumberOfSections);
-printf("Time Date Stamp = " FORMAT "\n", ifh->TimeDateStamp);
-printf("Pointer to symbol Table = " FORMAT "\n", ifh->PointerToSymbolTable);
-printf("Number of symbols = " FORMAT "\n", ifh->NumberOfSymbols);
-printf("Size of optional header = " FORMAT "\n", ifh->SizeOfOptionalHeader);
-printf("Characteristics = " FORMAT "\n", ifh->Characteristics);
+printf("Machine = " FORMAT "\n", conf->file_header.ifh->Machine);
+printf("Number of sections = " FORMAT "\n", conf->file_header.ifh->NumberOfSections);
+printf("Time Date Stamp = " FORMAT "\n", conf->file_header.ifh->TimeDateStamp);
+printf("Pointer to symbol Table = " FORMAT "\n", conf->file_header.ifh->PointerToSymbolTable);
+printf("Number of symbols = " FORMAT "\n", conf->file_header.ifh->NumberOfSymbols);
+printf("Size of optional header = " FORMAT "\n", conf->file_header.ifh->SizeOfOptionalHeader);
+printf("Characteristics = " FORMAT "\n", conf->file_header.ifh->Characteristics);
